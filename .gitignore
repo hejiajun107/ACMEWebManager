@@ -1,0 +1,8 @@
+﻿################################################################################
+# 此 .gitignore 文件已由 Microsoft(R) Visual Studio 自动创建。
+################################################################################
+
+/src/ACMEWebManager/data.db
+/src/ACMEWebManager/data.db-shm
+/src/ACMEWebManager/data.db-wal
+/src/.vs/ACMEWebManager
