@@ -1,0 +1,10 @@
+﻿@model ACMEWebManager.ViewModels.ACMEClientOptionVMs.ACMEClientOptionListVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:searchpanel vm="@Model" reset-btn="true">
+<wt:row items-per-row="ItemsPerRowEnum.Three">
+<wt:combobox field="Searcher.CA" empty-text="@Localizer["Sys.All"]" />
+<wt:textbox field="Searcher.Domain" />
+</wt:row>
+</wt:searchpanel>
+<wt:grid vm="@Model" url="/ACMEClientOption/Search"/>

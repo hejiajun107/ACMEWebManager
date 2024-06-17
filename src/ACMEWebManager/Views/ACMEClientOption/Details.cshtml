@@ -1,0 +1,20 @@
+﻿@model ACMEWebManager.ViewModels.ACMEClientOptionVMs.ACMEClientOptionVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:form vm="@Model">
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:display field="Entity.Mail" />
+<wt:display field="Entity.CA" />
+<wt:display field="Entity.Domain" />
+<wt:display field="Entity.CountryName" />
+<wt:display field="Entity.State" />
+<wt:display field="Entity.Locality" />
+<wt:display field="Entity.Organization" />
+<wt:display field="Entity.OrganizationUnit" />
+<wt:display field="Entity.CommonName" />
+<wt:display field="Entity.DNSProvider.AppId" />
+</wt:row>
+    <wt:row align="AlignEnum.Right">
+        <wt:closebutton />
+    </wt:row>
+</wt:form>

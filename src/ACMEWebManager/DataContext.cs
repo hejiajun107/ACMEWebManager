@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
+using ACMEWebManager.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using WalkingTec.Mvvm.Core;
@@ -9,7 +10,8 @@ namespace ACMEWebManager
     public class DataContext : FrameworkContext
     {
         public DbSet<FrameworkUser> FrameworkUsers { get; set; }
-
+        public DbSet<ACMEClientOption> ACMEClientOptions { get; set; }
+        public DbSet<DNSProvider> DNSProviders { get; set; }
 
         public DataContext(CS cs)
              : base(cs)

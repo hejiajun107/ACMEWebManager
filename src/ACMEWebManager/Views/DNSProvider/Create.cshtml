@@ -1,0 +1,15 @@
+﻿@model ACMEWebManager.ViewModels.DNSProviderVMs.DNSProviderVM
+@inject IStringLocalizer<Program> Localizer;
+
+<wt:form vm="@Model">
+<wt:row items-per-row="ItemsPerRowEnum.Two">
+<wt:combobox field="Entity.ProviderType" />
+<wt:textbox field="Entity.AppId" />
+<wt:textbox field="Entity.SecretId" />
+<wt:textbox field="Entity.SecretKey" />
+</wt:row>
+    <wt:row align="AlignEnum.Right">
+        <wt:submitbutton />
+        <wt:closebutton />
+    </wt:row>
+</wt:form>
